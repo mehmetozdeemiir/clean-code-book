@@ -4,11 +4,11 @@ public class FirstClass {
     Team team;
 
     public void makeUp1(){
-        team.performance.member.goal.shoot();
+        team.performance.member.goal.shoot();//bad example
     }
 
     public void getItDone(){
-        team.increasePerform();
+        team.increasePerform();//good example
     }
 
 }

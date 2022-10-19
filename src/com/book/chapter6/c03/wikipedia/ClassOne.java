@@ -6,7 +6,7 @@ public class ClassOne {
 
 
 
-    public void method1() {
+    public void method1() {//true
         method2();
     }
     public void method2() {
@@ -14,31 +14,19 @@ public class ClassOne {
     }
 
 
-
-
-
-
-    public void method3(ClassTwo classTwo) {
+    public void method3(ClassTwo classTwo) {//true m's parameters
         classTwo.method4();
     }
-
-
-
-
-
 
 
     public void method4(){
-        ClassTwo classTwo = new ClassTwo();
+        ClassTwo classTwo = new ClassTwo();// any object created/instantited within m
         classTwo.method4();
     }
 
 
-
-
-
     public void method5(){
-        classTwo = new ClassTwo();
+        classTwo = new ClassTwo();//O's direct component objects
         classTwo.method4();
     }
 
