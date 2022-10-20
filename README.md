@@ -61,9 +61,9 @@
 
 - Demeter Kuralına göre (Law of Demeter, LoD *), hiçbir modül bir diğer modülünü iç dünyasını bilmemeli. Vikipedi’de (evet 2 yıldır yasaklı olan Vikipedi’de) bu yasa aşağıdaki üç madde ile açıklanıyor:
 
-1-)Her birim diğer birimler hakkında kısıtlı bilgiye sahip olmalıdır. Sadece birbiriyle yakından ilişkili olanlar birbirini tanımalı.
-2-)Her birim yalnızca kendi arkadaşlarıyla konuşmalı; yabancılarla konuşmamalı.
-3-)Sadece yakın arkadaşlarıyla konuşmalı.
+- 1-)Her birim diğer birimler hakkında kısıtlı bilgiye sahip olmalıdır. Sadece birbiriyle yakından ilişkili olanlar birbirini tanımalı.
+- 2-)Her birim yalnızca kendi arkadaşlarıyla konuşmalı; yabancılarla konuşmamalı.
+- 3-)Sadece yakın arkadaşlarıyla konuşmalı.
 
 - Bu sayede gevşekçe bağlı (loosely coupled) modüller üretilmiş olur. Bu da projenin esnekliğini, bakım yapılabilirliğini, anlaşılabilirliğini ve test edilebilirliğini artırır.
 
@@ -96,12 +96,12 @@ Bu sayede fail edecek test yaz - kodu geliştir - fail edecek test yaz şeklin
 - Test metodlarındaki assert sayısı en aza indirgenmelidir. Testler çalıştırıldığında fail eden bir assert yüzünde onun altında kalan assertlerin sonuçları muamma olmaktadır.
 - Test metodu sadece bir konuyu test etmelidir. 
 - Birden fazla durum için farklı test metodları yazılmalıdır.
-#####**F.I.R.S.T. kuralı**
+##### **F.I.R.S.T. kuralı**
 Testler F.I.R.S.T. kuralına uymalıdır:
-**Fast**: Testler hızlı çalışmalıdır. Yavaş çalışan testi kimse çalıştırmak istemez, hatalar tespit edilemez.
-**Independent**: Testler birbirinden bağımsız çalışabilmelidir.
-**Repeatable**: Testler her ortamda tekrarlanabilmelidir.
-**Self-validating**: Test sonucunu anlamak için fazla düşünmeye gerek olmamalıdır. Test ya geçmeli ya fail etmelidir. Durumu anlamak için çıktıları incelemek vs. gerekmemelidir.
-**Timely**: Testler zamanında yazılmalıdır. Production kodla beraber geliştirilmelidir.
+- **Fast**: Testler hızlı çalışmalıdır. Yavaş çalışan testi kimse çalıştırmak istemez, hatalar tespit edilemez.
+- **Independent**: Testler birbirinden bağımsız çalışabilmelidir.
+- **Repeatable**: Testler her ortamda tekrarlanabilmelidir.
+- **Self-validating**: Test sonucunu anlamak için fazla düşünmeye gerek olmamalıdır. Test ya geçmeli ya fail etmelidir. Durumu anlamak için çıktıları incelemek vs. gerekmemelidir.
+- **Timely**: Testler zamanında yazılmalıdır. Production kodla beraber geliştirilmelidir.
 
 
