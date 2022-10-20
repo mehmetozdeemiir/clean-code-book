@@ -1,8 +1,6 @@
-# clean-code-book
-
 ### Clean Code kitabından aldığım notlar
 
-#####Bölüm 2: İsimlendirmeler
+##### Bölüm 2: İsimlendirmeler
 - İsimlendirmelerin çoğu zaman yorum satırına ihtiyaç duymaması gerekir.
 - İsimlendirme niyeti belli etmelidir. 
 - Yanlış bilgilendirmemelidir. 
@@ -15,7 +13,7 @@
 - Zeki olmaya çalışılmamalı, sade herkesin anlayacağı isim kullanılmalıdır.
 - İsimleri değiştirmekten korkmamalı. Gerekli yerlerde refactor yapılmalıdır.
 
-#####Bölüm 3: Fonksiyonlar
+##### Bölüm 3: Fonksiyonlar
 - Fonksiyon nedir?:  belirli işlemleri gerçekleştirmemizi sağlayan talimatlar bütünüdür.
 - Fonksiyon uzunluğu kaç satır olmalı  = five lines of code okunmalı.
 - Fonksiyonların ilk kuralı, küçük olmalarıdır. İkinci kuralı ise daha küçük olmaları gerektiğidir.
@@ -32,7 +30,7 @@
 - Fonksiyondan hata kodu dönmektense exception fırlatmak tercih edilmelidir.
 - Try/Catch blokları fonksiyonlara dönüştürülmeli, blok sadeleştirilmelidir.
 
-#####Bölüm 4: Yorumlar
+##### Bölüm 4: Yorumlar
 
 - Kötü koda açıklama yazmakla uğraşılmamalı, kodu tekrar yazmalıdır.
 - Kod açıklamaya gerek kalmayacak kadar okunur ve anlaşılır olmalıdır. 
@@ -46,7 +44,7 @@
 - Yanlış bilgi içeren, yanlış yönlendiren yorumlar tehlikelidir. Bir an önce kurtulunmalıdır.
 - Yoruma alınmış kod bırakılmamalıdır, silinmelidir. Siz silmezseniz, birinin işine yarayacak düşüncesiyle kimse silmeye cesaret edemez.
 
-#####Bölüm 5: Formatlama
+##### Bölüm 5: Formatlama
 - Kodun çalışır olması kadar okunabilir olması da önemlidir.
 - Kod listesi okurken gazete okuyor hissi vermeli, yukarıdan aşağıya genelden özele doğru bir yapı oluşturulmalıdır.
 - Alakalı metodlar birbirine yakın yerleştirilmelidir.
@@ -58,7 +56,7 @@
 - Sınıf içerisinde metodlar arası 1 adet boşluk var.
 - İf ve else iflerin içinde 1 satır yazıyorsa süslü parantezden kaçınılır.
 
-#####Bölüm 6: Nesneler Ve Veri Yapıları
+##### Bölüm 6: Nesneler Ve Veri Yapıları
 - Değişkenleri private yapmamızın bir sebebi var. Başka kimsenin onlara bağımlı olmasını istemeyiz.
 
 - Demeter Kuralına göre (Law of Demeter, LoD *), hiçbir modül bir diğer modülünü iç dünyasını bilmemeli. Vikipedi’de (evet 2 yıldır yasaklı olan Vikipedi’de) bu yasa aşağıdaki üç madde ile açıklanıyor:
@@ -72,7 +70,7 @@
 - Zincirleme metot kullanımından kaçınılmalıdır.
 - Data Transfer Object önemi.
 
-#####Bölüm 7: Hataları Yönetmek
+##### Bölüm 7: Hataları Yönetmek
 
 - Hata kodu dönmektense Exception kullanılmalıdır. Böylece çağıran kod hata kodu kontrol etmekten kurtulur ve esas işi yapan kod, hata handling kodundan ayrıldığı için daha temiz olur.
 - Unchecked exception tercih edilmelidir. Checked exception fırlatan bir metodun catch’i 3 seviye yukardaysa, exceptiondaki bir değişiklik tüm seviyelerin değişmesine ve yeniden compile-deploy edilmesine sebep olmaktadır.
@@ -82,7 +80,7 @@
 - Metodlardan null dönmek hatalara davetiye çıkarır. Null dönmemeli, Exception fırlatmalı veya SPECIAL CASE nesnesi kullanılmalıdır.
 - Metodlara null parametre geçirmek, null dönmekten daha kötüdür. Null parametre geçirmekten sakınmalıdır. 
 
-#####Bölüm 8-9: Birim Testler
+##### Bölüm 8-9: Birim Testler
 - Temiz bir test ne sağlar? Üç şey: okunabilirlik, okunabilirlik, okunabilirlik.
 - TDD (Test Driven Development) pratiğinin üç temel yasası vardır. 
 1-) Fail eden bir test yazmadan production kodu yazma
